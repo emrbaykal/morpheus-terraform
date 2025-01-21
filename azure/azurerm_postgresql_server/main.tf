@@ -29,8 +29,8 @@ resource "azurerm_postgresql_server" "simple_postgresql_server" {
   sku_name = "B_Gen5_1"
   version  = "11"
 
-  administrator_login          = "hpe"
-  administrator_login_password = "HP1nv3nt!"
+  administrator_login          = "**"
+  administrator_login_password = "*****"
 
   ssl_enforcement_enabled = true
 }
