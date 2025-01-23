@@ -1,8 +1,3 @@
-variable "client_secret" {}
-variable "client_id" {}
-variable "subscription_id" {}
-variable "tenant_id" {}
-
 # Generate a random integer to create a globally unique name
 resource "random_integer" "ri" {
   min = 10000
