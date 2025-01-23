@@ -26,11 +26,10 @@ resource "azurerm_linux_web_app" "webapp" {
   resource_group_name   = azurerm_resource_group.rg.name
   service_plan_id       = azurerm_service_plan.appserviceplan.id
   depends_on            = [azurerm_service_plan.appserviceplan]
-  https_only            = true
 
   site_config {
     application_stack {
-      node_version = "16-lts"
+      php_version = "7.4"
     }
     minimum_tls_version = "1.2"
   }
